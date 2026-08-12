@@ -1,0 +1,214 @@
+﻿Input_param_category,Parameter_label,Modelled_value,Brief_parameter_description
+Population,p_male,0.482,% of those initially contacted who are men
+Population,pop_age_mean,61.939,Age distribution (truncated normal) location
+Population,pop_age_sd,9,Age distribution (truncated normal) scale
+Population,pop_age_LL,0.22,"Lower age limit of whole population, applied as boundary of entry age distribution"
+Population,pop_age_UL,0.978,"Upper age limit of whole population, applied as boundary of entry age distribution"
+Access,p_respond,0.508,% of those initially contacted who get risk assessment
+Access,p_join,0.836,% of those eligible for screening who join
+Natural history,nh_entry_nsclc_plco,0.885,Effect of PLCO on NSCLC prevalence
+Natural history,nh_entry_nsclc_IA1_int,-7.128,Baseline prevalence of stage IA1 NSCLC*
+Natural history,nh_entry_nsclc_IA2_int,-5.663,Baseline prevalence of stage IA2 NSCLC*
+Natural history,nh_entry_nsclc_IA3_int,-6.925,Baseline prevalence of stage IA3 NSCLC*
+Natural history,nh_entry_nsclc_IB_int,-11.178,Baseline prevalence of stage IB NSCLC*
+Natural history,nh_entry_nsclc_II_int,-6.839,Baseline prevalence of stage II NSCLC*
+Natural history,nh_entry_nsclc_III_int,-6.563,Baseline prevalence of stage III NSCLC*
+Natural history,nh_entry_nsclc_IV_int,-7.163,Baseline prevalence of stage IV NSCLC*
+Natural history,nh_entry_sclc_plco,0.93,Effect of PLCO on SCLC prevalence
+Natural history,nh_entry_sclc_lim_int,-7.794,Baseline prevalence of Limited SCLC*
+Natural history,nh_entry_sclc_ext_int,-8.259,Baseline prevalence of Extensive SCLC*
+Natural history,nh_post_inc_nsclc_c,-5.572,Average NSCLC incidence (median PLCO in NLST)*
+Natural history,nh_post_inc_nsclc_m,0.839,Effect of PLCO on NSCLC incidence
+Natural history,nh_post_inc_sclc_c,-7.486,Average SCLC incidence (median PLCO in NLST)*
+Natural history,nh_post_inc_sclc_m,0.976,Effect of PLCO on SCLC incidence
+Natural history,nh_prog_lambda_1,6.355,Rate of preclinical progression from Stage IA1 NSCLC to Stage IA2 NSCLC
+Natural history,nh_prog_lambda_2,1.548,Rate of preclinical progression from Stage IA2 NSCLC to Stage IA3 NSCLC
+Natural history,nh_prog_lambda_3,4.989,Rate of preclinical progression from Stage IA3 NSCLC to Stage IB NSCLC
+Natural history,nh_prog_lambda_4,11.351,Rate of preclinical progression from Stage IB NSCLC to Stage II NSCLC
+Natural history,nh_prog_lambda_5,3.109,Rate of preclinical progression from Stage II NSCLC to Stage III NSCLC
+Natural history,nh_prog_lambda_6,1.095,Rate of preclinical progression from Stage III NSCLC to Stage IV NSCLC
+Natural history,nh_prog_lambda_7,0.003,Rate of death from never-diagnosed Stage IV NSCLC
+Natural history,nh_prog_xi_1,0.022,Rate of clinical presentation of preclinical Stage IA1 NSCLC
+Natural history,nh_prog_xi_2,0.039,Rate of clinical presentation of preclinical Stage IA2 NSCLC
+Natural history,nh_prog_xi_3,0.082,Rate of clinical presentation of preclinical Stage IA3 NSCLC
+Natural history,nh_prog_xi_4,0.265,Rate of clinical presentation of preclinical Stage IB NSCLC
+Natural history,nh_prog_xi_5,0.287,Rate of clinical presentation of preclinical Stage II NSCLC
+Natural history,nh_prog_xi_6,0.47,Rate of clinical presentation of preclinical Stage III NSCLC
+Natural history,nh_prog_xi_7,1.929,Rate of clinical presentation of preclinical Stage IV NSCLC
+Natural history,nh_prog_mu_1,0.613,Rate of preclinical progression from Limited SCLC to Extensive SCLC
+Natural history,nh_prog_mu_2,0.003,Rate of death from never-diagnosed Extensive SCLC
+Natural history,nh_prog_phi_1,0.194,Rate of clinical presentation of preclinical Limited SCLC
+Natural history,nh_prog_phi_2,2.097,Rate of clinical presentation of preclinical Extensive SCLC
+Natural history,r_IF_NLST_mid_screening,0.002,Constant added to all cancer presentation rates
+Natural history,nh_prog_re_sigma,0.932,Heterogeneity in NSCLC progression rates (log-normal) scale
+Risk prediction,p_smk_c_m_55-64,0.131,"Proportion current smokers, males, aged 55-64"
+Risk prediction,p_smk_c_m_65+,0.076,"Proportion current smokers, males, aged 65+"
+Risk prediction,p_smk_c_f_55-64,0.114,"Proportion current smokers, females, aged 55-64"
+Risk prediction,p_smk_c_f_65+,0.065,"Proportion current smokers, females, aged 65+"
+Risk prediction,p_smk_f_m_55-64,0.334,"Proportion former smokers, males, aged 55-64"
+Risk prediction,p_smk_f_m_65+,0.481,"Proportion former smokers, males, aged 65+"
+Risk prediction,p_smk_f_f_55-64,0.276,"Proportion former smokers, females, aged 55-64"
+Risk prediction,p_smk_f_f_65+,0.334,"Proportion former smokers, females, aged 65+"
+Risk prediction,plco_cs_age_minus_60,0.1198,Effect of age on PLCO for current smokers
+Risk prediction,plco_cs_cons,-2.6935,Average PLCO for current smokers aged 60*
+Risk prediction,plco_cs_alpha,-4.2856,PLCO distribution for current smokers (skew t) asymmetry
+Risk prediction,plco_cs_omega,1.8818,PLCO distribution for current smokers (skew t) scale
+Risk prediction,plco_cs_df,2.2919,PLCO distribution for current smokers (skew t) degrees of freedom
+Risk prediction,plco_fs_age_minus_60,0.0873,Effect of age on PLCO for former smokers
+Risk prediction,plco_fs_cons,-4.9074,Average PLCO for former smokers aged 60*
+Risk prediction,plco_fs_alpha,-0.9564,PLCO distribution for former smokers (skew normal) asymmetry
+Risk prediction,plco_fs_omega,1.1959,PLCO distribution for former smokers (skew normal) scale
+Risk prediction,plco_ns_age_minus_60,0.0842,Effect of age on PLCO for never smokers
+Risk prediction,plco_ns_cons,-7.3991,Average PLCO for never smokers aged 60*
+Risk prediction,plco_ns_alpha,2.3616,PLCO distribution for never smokers (skew normal) asymmetry
+Risk prediction,plco_ns_omega,0.7359,PLCO distribution for never smokers (skew normal) scale
+Risk prediction,p_plco_00_05_c,0.044527596,Probability PLCO < 0.5% if current smoker and ineligible
+Risk prediction,p_plco_05_10_c,0.034798877,Probability PLCO 0.5%-1.0% if current smoker and ineligible
+Risk prediction,p_plco_10_12_c,0.015902713,Probability PLCO 1.0%-1.2% if current smoker and ineligible
+Risk prediction,p_plco_12_14_c,0.013283442,Probability PLCO 1.2%-1.4% if current smoker and ineligible
+Risk prediction,p_plco_14_15_c,0.010664172,Probability PLCO 1.4%-1.51% if current smoker and ineligible
+Risk prediction,p_plco_00_05_f,0.515434986,Probability PLCO < 0.5% if former smoker and ineligible
+Risk prediction,p_plco_05_10_f,0.225070159,Probability PLCO 0.5%-1.0% if former smoker and ineligible
+Risk prediction,p_plco_10_12_f,0.059494855,Probability PLCO 1.0%-1.2% if former smoker and ineligible
+Risk prediction,p_plco_12_14_f,0.051637044,Probability PLCO 1.2%-1.4% if former smoker and ineligible
+Risk prediction,p_plco_14_15_f,0.029186155,Probability PLCO 1.4%-1.51% if former smoker and ineligible
+Risk prediction,Beta_current,0.1096,
+Risk prediction,Beta_former,0.047,
+Risk prediction,Sigma_eta,0.552,
+Risk prediction,age_minus_60,0.007,
+Risk prediction,1.currentsmok,0.446,
+Risk prediction,currentsmokage_minus_60,0.026,
+Risk prediction,plco_spl1,0.134,
+Risk prediction,plco_spl2,-0.366,
+Risk prediction,plco_spl3,1.363,
+Risk prediction,_cons,1.134,
+Risk prediction,Knot_k1,-10.2649,
+Risk prediction,Knot_k2,-6.66489,
+Risk prediction,Knot_k3,-4.937142,
+Risk prediction,Knot_k4,-2.48904,
+LDCT specificity,spec_LDCT,0.963,Specificity of LDCT
+LDCT specificity,pr_indeter_3m,0.12,
+LDCT specificity,pr_indeter_12m,0.14,
+LDCT sensitivity,sens_NSCLC_IA1,0.823309832,Sensitivity of LDCT for NSCLC stage IA1
+LDCT sensitivity,sens_NSCLC_IA2,0.840800697,Sensitivity of LDCT for NSCLC stage IA2
+LDCT sensitivity,sens_NSCLC_IA3,0.85147307,Sensitivity of LDCT for NSCLC stage IA3
+LDCT sensitivity,sens_NSCLC_IB,0.873888377,Sensitivity of LDCT for NSCLC stage IB
+LDCT sensitivity,sens_NSCLC_II,0.925345755,Sensitivity of LDCT for NSCLC stage II
+LDCT sensitivity,sens_NSCLC_III,0.962893038,Sensitivity of LDCT for NSCLC stage III
+LDCT sensitivity,sens_SCLC_limited,0.789395557,Sensitivity of LDCT for Limited SCLC
+Lung cancer survival,s_nsclc_screening,0,
+Lung cancer survival,s_nsclc_inter_canc,-0.683006332,NSCLC survival disadvantage for interval cancer vs screened
+Lung cancer survival,s_nsclc_post_scrn_canc,-0.533173404,NSCLC survival disadvantage for non-screened vs screened
+Lung cancer survival,s_nsclc_stage IA1,2.214990903,NSCLC survival advantage for stage IA1 vs stage III
+Lung cancer survival,s_nsclc_stage IA2,1.921358534,NSCLC survival advantage for stage IA2 vs stage III
+Lung cancer survival,s_nsclc_stage IA3,1.821323613,NSCLC survival advantage for stage IA3 vs stage III
+Lung cancer survival,s_nsclc_stage IB,1.437301524,NSCLC survival advantage for stage IB vs stage III
+Lung cancer survival,s_nsclc_stage II,1.187049382,NSCLC survival advantage for stage II vs stage III
+Lung cancer survival,s_nsclc_stage III,0,
+Lung cancer survival,s_nsclc_stage IV,-1.38176675,NSCLC survival disadvantage for stage IV vs stage III
+Lung cancer survival,s_nsclc_age_minus_64,-0.023558355,NSCLC survival disadvantage for older age
+Lung cancer survival,s_nsclc_cons,1.27588224,Average survival in those with NSCLC
+Lung cancer survival,s_nsclc_ln_sigma,0.310678196,NSCLC survival distribution (generalised gamma) (log-)scale
+Lung cancer survival,s_nsclc_kappa,0.30704233,NSCLC survival distribution (generalised gamma) shape
+Lung cancer survival,s_sclc_screening,0,
+Lung cancer survival,s_sclc_inter_canc,-0.142419117,SCLC survival disadvantage for interval cancer vs screened
+Lung cancer survival,s_sclc_post_scrn_canc,-0.144601665,SCLC survival disadvantage for non-screened vs screened
+Lung cancer survival,s_sclc_limited,0,SCLC survival disadvantage for Extensive vs Limited
+Lung cancer survival,s_sclc_extensive,-0.413176109,SCLC survival disadvantage for Extensive vs Limited
+Lung cancer survival,s_sclc_age_minus_64,-0.045430485,SCLC survival disadvantage for older age
+Lung cancer survival,s_sclc_cons,1.15112951,Average survival in those with SCLC
+Lung cancer survival,s_sclc_ln_sigma,0.185549767,SCLC survival distribution (generalised gamma) (log-)scale
+Lung cancer survival,s_sclc_kappa,0.603799325,SCLC survival distribution (generalised gamma) shape
+Lung cancer survival,s_corr_prog_rho,0.8,Correlation between LC survival and rate of pre-clinical progression
+Other cause mortality,ocm_coef_intercept,-5.802614,
+Other cause mortality,ocm_coef_age,0.04532,
+Other cause mortality,ocm_coef_plco,0.520297,
+Other cause mortality,ocm_coef_curr_smok,0.312519,
+Other cause mortality,ocm_coef_plco_curr_ smok,-0.166465,
+Predicting gender,Gen_Age_minus_60,0.002919017,
+Predicting gender,Gen_Current_smoker,0.371788664,
+Predicting gender,Gen_Interaction,0.028930592,
+Predicting gender,PLCO_spline_basis_1,-0.026013058,
+Predicting gender,PLCO_spline_basis_2,-0.18793181,
+Predicting gender,PLCO_spline_basis_3,0.606235242,
+Predicting gender,Gen_cons,-0.285911137,
+Predicting IMD,Q1_60_64,0.223909283,
+Predicting IMD,Q1_65_69,0.56327104,
+Predicting IMD,Q1_70_74,0.253256252,
+Predicting IMD,Q1_75_79,0.62024825,
+Predicting IMD,Q1_Current_smoker,-0.735383183,
+Predicting IMD,Q1_PLCO_spline_basis_1,0.103035632,
+Predicting IMD,Q1_PLCO_spline_basis_2,-0.700967565,
+Predicting IMD,Q1_PLCO_spline_basis_3,2.790849953,
+Predicting IMD,Q1_cons,0.815013235,
+Predicting IMD,Q2_60_64,0.550776586,
+Predicting IMD,Q2_65_69,0.317697405,
+Predicting IMD,Q2_70_74,0.585118428,
+Predicting IMD,Q2_75_79,0.759454416,
+Predicting IMD,Q2_Current_smoker,-0.561431828,
+Predicting IMD,Q2_PLCO_spline_basis_1,0.322299864,
+Predicting IMD,Q2_PLCO_spline_basis_2,-1.232339887,
+Predicting IMD,Q2_PLCO_spline_basis_3,4.778239106,
+Predicting IMD,Q2_cons,2.158683183,
+Predicting IMD,Q3_60_64,0.503177014,
+Predicting IMD,Q3_65_69,0.169256944,
+Predicting IMD,Q3_70_74,-0.102383936,
+Predicting IMD,Q3_75_79,0.55647326,
+Predicting IMD,Q3_Current_smoker,-0.7774588,
+Predicting IMD,Q3_PLCO_spline_basis_1,0.101501777,
+Predicting IMD,Q3_PLCO_spline_basis_2,-0.580942795,
+Predicting IMD,Q3_PLCO_spline_basis_3,2.72504456,
+Predicting IMD,Q3_cons,0.800352611,
+Predicting IMD,Q4_60_64,0.164730274,
+Predicting IMD,Q4_65_69,-0.170221674,
+Predicting IMD,Q4_70_74,-0.174635643,
+Predicting IMD,Q4_75_79,0.148423918,
+Predicting IMD,Q4_Current_smoker,-0.209570757,
+Predicting IMD,Q4_PLCO_spline_basis_1,0.117590296,
+Predicting IMD,Q4_PLCO_spline_basis_2,-0.405264665,
+Predicting IMD,Q4_PLCO_spline_basis_3,1.557848137,
+Predicting IMD,Q4_cons,0.782453656,
+Predicting white,White_60_64,0.23511066,
+Predicting white,White_65_69,0.414380524,
+Predicting white,White_70_74,0.796613436,
+Predicting white,White_75_79,0.900678755,
+Predicting white,White_current_smoker,-0.021148757,
+Predicting white,Q2_IMD,-0.089128176,
+Predicting white,Q3_IMD,-0.096320354,
+Predicting white,Q4_IMD,-1.72133709,
+Predicting white,Q5_IMD,-2.094903079,
+Predicting white,White_cons,3.98000294,
+Attend_LHC,LHC_Intercept,0.1787,
+Attend_LHC,LHC_age65_74,0.1524,
+Attend_LHC,LHC_age75,-0.06071,
+Attend_LHC,LHC_ageOther,0.3502,
+Attend_LHC,LHC_ageNotknown,1.347,
+Attend_LHC,LHC_genderFemale,-0.06677,
+Attend_LHC,LHC_ethnicityOtherethnicities,-1.922,
+Attend_LHC,LHC_ethnicityNotknown,-3.447,
+Attend_LHC,LHC_imdQ2,0.2934,
+Attend_LHC,LHC_imdQ3,0.3852,
+Attend_LHC,LHC_imdQ4,0.3817,
+Attend_LHC,LHC_imdQ5,0.2535,
+Attend_LHC,LHC_imdUnknown,2.832,
+Attend_LDCT,LDCT_Intercept,2.039,
+Attend_LDCT,LDCT_age65_74,0.08823,
+Attend_LDCT,LDCT_age75,0.3295,
+Attend_LDCT,LDCT_ageOther,0.4911,
+Attend_LDCT,LDCT_ageNotknown,-0.7467,
+Attend_LDCT,LDCT_genderFemale,-0.1436,
+Attend_LDCT,LDCT_ethnicityOtherethnicities,-0.2403,
+Attend_LDCT,LDCT_ethnicityNotknown,0.5602,
+Attend_LDCT,LDCT_imdQ2,0.04999,
+Attend_LDCT,LDCT_imdQ3,0.175,
+Attend_LDCT,LDCT_imdQ4,0.2555,
+Attend_LDCT,LDCT_imdQ5,0.02305,
+Attend_LDCT,LDCT_imdUnknown,0.9321,
+Attend_2nd_LDCT,2ndLDCT_Intercept,3,
+Attend_2nd_LDCT,2ndLDCT_genderFemale,-0.086177696,
+Attend_2nd_LDCT,2ndLDCT_ethnicityOtherethnicities,0.405465108,
+Attend_2nd_LDCT,2ndLDCT_imdQ1,-0.261364764,
+Attend_2nd_LDCT,2ndLDCT_imdQ2,-0.198450939,
+Attend_2nd_LDCT,2ndLDCT_imdQ3,-0.083381609,
+Attend_2nd_LDCT,2ndLDCT_imdQ4,0.139761942,
+Attend_2nd_LDCT,2ndLDCT_currentsmoker,-0.562118918,
