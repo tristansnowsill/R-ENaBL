@@ -27,7 +27,7 @@ library(tidyr)
 
 Patient_df <- read.csv("Patient_characteristics_df.csv", header=TRUE)
 
-source("10_simmer_trajectories.R")
+source("06_simmer_trajectories.R")
 source("05_screening.R")
 source("02_parameters.R")
 source("03_population.R")
